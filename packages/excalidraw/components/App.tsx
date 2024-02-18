@@ -1887,6 +1887,7 @@ class App extends React.Component<AppProps, AppState> {
       });
       return;
     }
+    console.log(result.choices[0].message.content);
     trackEvent("ai", "generate (success)", "d2c");
 
     if (result.choices[0].message.content == null) {
